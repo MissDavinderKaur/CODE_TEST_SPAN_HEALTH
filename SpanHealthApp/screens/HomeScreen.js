@@ -21,14 +21,14 @@ export default function HomeScreen() {
         <View style={styles.getStartedOptionsContainer}>
           <Text style={styles.foodHeading}>Food</Text>
           <View style={styles.getStartedOptions}>
-            <View>
+            <View style={styles.option}>
               <Image
               source={require('../assets/images/blog.jpg')}
               style={styles.optionImage}
               />
-              <Text style={styles.optionText}>Blog</Text>
+              <Text style={[styles.optionText, styles.selected]}>Blog</Text>
             </View>
-            <View>
+            <View style={styles.option}>
               <Image
               source={require('../assets/images/recipes.jpg')}
               style={styles.optionImage}
@@ -106,6 +106,10 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row'
   },
+  option: {
+    width: '48%',
+    alignItems: 'center'
+  },
   optionImage: {
     width: 100,
     height: 100,
@@ -115,10 +119,18 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   optionText: {
+    width: '50%',
     fontSize: 23,
     marginTop: 10,
     color: '#8ECFCF',
     textAlign: 'center',
+    padding: 5,
+    borderRadius: 20,
+    borderColor: 'rgb(235, 237, 239)',
+    borderWidth: 3
+  },
+  selected: {
+    borderColor: '#8ECFCF',
   },
   blogFeed: {
     alignItems: 'center',
