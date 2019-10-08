@@ -44,7 +44,35 @@ export default function HomeScreen() {
             source={require('../assets/images/blogImage1.jpg')}
             style={styles.blogImage}
             />
-            <Text style={styles.blogText}>How to interpret HbA1c test data</Text>
+            <Text style={styles.blogText}>Interpreting HbA1c test data</Text>
+          </View>
+          <View style={styles.blog}>
+            <Image
+            source={require('../assets/images/blogImage2.jpg')}
+            style={styles.blogImage}
+            />
+            <Text style={styles.blogText}>Find the right fasting regime</Text>
+          </View>
+          <View style={styles.blog}>
+            <Image
+            source={require('../assets/images/blogImage3.jpg')}
+            style={styles.blogImage}
+            />
+            <Text style={styles.blogText}>Supercharging your body</Text>
+          </View>
+          <View style={styles.blog}>
+            <Image
+            source={require('../assets/images/blogImage4.jpg')}
+            style={styles.blogImage}
+            />
+            <Text style={styles.blogText}>How to build healthy habits</Text>
+          </View>
+          <View style={styles.blog}>
+            <Image
+            source={require('../assets/images/blogImage5.jpg')}
+            style={styles.blogImage}
+            />
+            <Text style={styles.blogText}>Intermittent fasting</Text>
           </View>
         </View>
       </ScrollView>
@@ -94,16 +122,28 @@ const styles = StyleSheet.create({
   blogFeed: {
     alignItems: 'center',
     marginTop: 5,
+    width: '100%',
+    padding: 10
   },
   blog: {
-
+    marginTop: 20,
+    width: '90%',
+    height: 150,
   },
   blogImage: {
-    width: 300,
-    resizeMode: 'center',
+    width: '100%',
+    height: 150,
+    resizeMode: 'cover',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
   },
   blogText: {
-
+    color: '#8ECFCF',
+    color: 'black',
+    fontSize: 15,
+    fontWeight: '300',
+    marginTop: -15,
+    backgroundColor: 'rgba(248, 249, 249, 0.9)'
   },
   tabBarInfoContainer: {
     position: 'absolute',
