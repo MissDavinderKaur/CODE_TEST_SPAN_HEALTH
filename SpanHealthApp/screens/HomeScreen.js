@@ -39,6 +39,7 @@ export default function HomeScreen() {
         </View>
 
         <View style={styles.blogFeed}>
+        <Text style={styles.blogHeading}>New blogs...</Text>
           <View style={styles.blog}>
             <Image
             source={require('../assets/images/blogImage1.jpg')}
@@ -114,16 +115,21 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   optionText: {
-    fontSize: 20,
+    fontSize: 23,
     marginTop: 10,
     color: '#8ECFCF',
     textAlign: 'center',
   },
   blogFeed: {
     alignItems: 'center',
-    marginTop: 5,
+    marginTop: 50,
     width: '100%',
     padding: 10
+  },
+  blogHeading: {
+    fontSize: 25,
+    color: '#8ECFCF',
+    textAlign: 'center',
   },
   blog: {
     marginTop: 20,
@@ -140,9 +146,9 @@ const styles = StyleSheet.create({
   blogText: {
     color: '#8ECFCF',
     color: 'black',
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: '300',
-    marginTop: -15,
+    marginTop: -18,
     backgroundColor: 'rgba(248, 249, 249, 0.9)'
   },
   tabBarInfoContainer: {
